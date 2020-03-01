@@ -9,16 +9,16 @@ const AsyncPizza = asyncComponent(() => {
 })
 
 class App extends Component {
-    render() {
+    render () {
         return (
             <div>
                 <div>
-                    <Link to='/'>Users</Link>
-                    <Link to='/pizza'>Pizza</Link>
+                    <Link to="/">Users</Link> |
+                    <Link to="/pizza">Pizza</Link>
                 </div>
                 <div>
-                    <Route path='/' exact component={Users} />
-                    <Route path='/pizza' component={AsyncPizza} />
+                    <Route path="/" exact component={Users} />
+                    <Route path="/pizza" component={AsyncPizza} />
                 </div>
             </div>
         )
